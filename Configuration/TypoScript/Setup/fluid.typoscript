@@ -1,0 +1,18 @@
+page.10 = FLUIDTEMPLATE
+page.10 {
+    templateRootPaths {
+        0 = EXT:aws_start_screen/Resources/Private/Templates/
+    }
+    layoutRootPaths {
+        0 = EXT:aws_start_screen/Resources/Private/Layouts/
+    }
+
+    templateName = TEXT
+    templateName = StartScreen
+
+    variables {
+        hostname = TEXT
+        hostname.stdWrap.data = getIndpEnv:HTTP_HOST
+        hostname.stdWrap.htmlSpecialChars = 1
+    }
+}

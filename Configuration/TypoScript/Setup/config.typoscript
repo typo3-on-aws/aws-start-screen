@@ -1,0 +1,21 @@
+config {
+    // ...
+    debug = 0
+    doctype = html5
+    metaCharset = utf-8
+
+    // ...
+    no_cache = 1
+    pageTitleFirst = 1
+    pageTitleSeparator = -
+    pageTitleSeparator.noTrimWrap = | | |
+
+    // Disable image upscaling
+    noScaleUp = 1
+
+    // Compression and concatenation of CSS and JS Files
+    compressCss = 0
+    compressJs = 0
+    concatenateCss = 0
+    concatenateJs = 0
+}

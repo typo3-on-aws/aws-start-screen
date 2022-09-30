@@ -1,0 +1,182 @@
+<f:layout name="Default" />
+<f:section name="Main">
+    <main role="main">
+
+        <!-- Landing Page -->
+        <section class="section landing-page" id="landing-page">
+            <div class="container d-flex flex-column">
+                <div class="d-flex justify-content-center">
+                    <f:image src="EXT:aws_start_screen/Resources/Public/Images/Brands/t3rrific.png" alt="t3rrific.com" width="160" height="160" class="logo" />
+                </div>
+                <h1 class="text-center mb-3">TYPO3-on-AWS</h1>
+                <h2 class="d-flex align-items-end">
+                    Congratulations!
+                    <f:image src="EXT:aws_start_screen/Resources/Public/Images/thumb-up.svg" alt="Thumb up" width="42" height="42" class="ms-2" />
+                </h2>
+                <p>
+                    You just launched an Amazon Web Services (AWS) <strong>EC2 instance</strong> with <strong>Debian GNU/Linux</strong> and <strong>TYPO3</strong> pre-installed.
+                    Please be advised, that costs may occur as long as the instance is up and running
+                    <a class="btn btn-typo3 btn-sm" href="https://aws.amazon.com/ec2/pricing/" target="_blank" role="button">read more</a>
+                </p>
+                <p>
+                    Now, the next thing you should do: get the <a class="js-scroll-trigger" href="#landing-page">access details</a> (which are required to login to the backend of TYPO3).
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md mb-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Project Website</strong>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Learn more about typical use cases, how to update TYPO3 and how you can customise the instance. Do you have any questions, need support or do you want to get involved?
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-typo3" href="https://t3rrific.com/typo3-on-aws/" target="_blank" alt="Project website: TYPO3 on a Debian Linux Amazon EC2 Instance">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Release Notes</strong>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Check out the latest news related to this instance and review the release notes of TYPO3.
+                                    This is all the technical stuff, latest changes, new versions, features and improvements.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-typo3" href="https://get.typo3.org/version/12" target="_blank" alt="TYPO3 Release Notes">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Free Online Chat</strong>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Get free support from the TYPO3 community at <a href="https://typo3.slack.com/" target="_blank" alt="TYPO3 Slack">Slack</a>
+                                    (TYPO3 account required). Join the channel:<br />
+                                    <f:image src="EXT:aws_start_screen/Resources/Public/Images/Brands/slack.svg" alt="Slack" width="24" height="24" class="" />
+                                    <code class="pl-0">#typo3-on-aws</code>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-typo3" href="https://typo3.slack.com/" target="_blank" alt="TYPO3 Slack">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Details -->
+        <section class="section access-details" id="access-details">
+            <div class="container">
+                <h2>Access Details</h2>
+
+                <p>
+                    Random passwords and other access details are automatically generated when you launch the EC2 instance the first time. They are stored in a text file <code>/home/admin/.accessdetails</code> on the server.
+                </p>
+                <p>
+                    To retrieve these credentials, login to the server via SSH (user name: <code>admin</code>) and use the private SSH key you set up during the EC2 instance launch. If you are using the command line, this could be as easy as executing the following command (where <code>private.key</code> is your private key file):
+                </p>
+                <pre class="rounded">ssh -i private.key admin@{hostname}</pre>
+                <p>
+                    All details required to access TYPO3 will be displayed. If you have any problems retrieving the access details, please refer to the
+                    <a class="js-scroll-trigger" href="#documentation">documentation</a>.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Documentation -->
+        <section class="section documentation" id="documentation">
+            <div class="container">
+                <h2>Documentation</h2>
+                <p>
+                    We know how important documentation is! The <strong>TYPO3-on-AWS</strong> machine image is made of several components.
+                    A modern and robust Debian GNU/Linux operating system with an Apache web server, the MySQL/MariaDB database engine, PHP and some other carefully selected software packages.
+                    On top of that, we are running the enterprise content management system &quot;TYPO3&quot;&mdash; and all this is powered by an awesome cloud technology at Amazon Web Services (AWS).
+                </p>
+                <p>
+                    In some cases you want to customize the initial setup, for example install Nginx instead of the Apache web server.
+                    The links below point you to the documentation which provides details on how to customize, maintain, and manage the TYPO3-on-AWS instance.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-lg-4 offset-lg-2 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <f:image src="EXT:aws_start_screen/Resources/Public/Images/Brands/t3rrific.png" alt="t3rrific.com" width="80" height="80" class="logo" />
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="https://t3rrific.com/typo3-on-aws/docs/" target="_blank" alt="TYPO3-on-AWS Documentation">TYPO3-on-AWS (t3rrific.com)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <f:image src="EXT:aws_start_screen/Resources/Public/Images/Brands/typo3.svg" alt="TYPO3" width="80" height="80" class="logo" />
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="https://typo3.org/help/documentation/" target="_blank" alt="TYPO3 Documentation Center">TYPO3 Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-2 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <f:image src="EXT:aws_start_screen/Resources/Public/Images/Brands/aws.svg" alt="Amazon Web Services (AWS)" width="80" height="80" class="logo" />
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="https://docs.aws.amazon.com/" target="_blank" alt="AWS Documentation">Amazon Web Services</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-2">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <f:image src="EXT:aws_start_screen/Resources/Public/Images/Brands/debian.svg" alt="Debian GNU/Linux" width="80" height="80" class="logo" />
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="https://debian-handbook.info/" target="_blank" alt="Debian Administrator's Handbook">Debian GNU/Linux</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backend Login -->
+        <section class="section backend-login" id="backend-login">
+            <div class="container">
+                <h2>Backend Login</h2>
+                <p>
+                    The <strong>backend</strong> of TYPO3 is the administration interface, which allows you to build and maintain your website. The access credentials provided give you full administrator access to the system.
+                </p>
+                <div class="alert alert-warning text-center" role="alert">
+                    Before you continue, make sure you retrieved the
+                    <a class="js-scroll-trigger" href="#access-details">access details</a> (admin user and password) as described!
+                </div>
+                <p>
+                    In order to access the TYPO3 backend, simply append <code>/typo3</code> at the end of the URL.
+                    The backend of this instance is currently available at:<br />
+                </p>
+                <div class="card mt-4">
+                    <div class="card-body text-center">
+                        <p class="m-0"><a href="/typo3" target="_top">http://{hostname}/typo3</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</f:section>
