@@ -3,7 +3,7 @@
     "description": "TYPO3 site package that provides a simple start screen with basic information about the TYPO3-on-AWS instance.",
     "type": "typo3-cms-extension",
     "require": {
-        "typo3/cms-core": "~12.0@dev"
+        "typo3/cms-core": "~13.0@dev"
     },
     "extra": {
         "typo3/cms": {
