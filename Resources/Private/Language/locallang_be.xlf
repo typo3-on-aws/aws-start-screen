@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="extra" date="2022-10-04T00:00:00Z" product-name="aws_start_screen">
+    <file source-language="en" datatype="plaintext" original="extra" date="2024-01-30T00:00:00Z" product-name="aws_start_screen">
         <header/>
         <body>
             <trans-unit id="typoscript_setup_name" xml:space="preserve">
-                <source>AWS Start Screen</source>
+                <source>TYPO3-on-AWS Start Screen</source>
             </trans-unit>
         </body>
     </file>
