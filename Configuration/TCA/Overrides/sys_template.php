@@ -1,10 +1,14 @@
 <?php
 
 /*
- * TYPO3 Extension "AWS Start Screen"
+ * This file is part of the TYPO3 CMS Extension "TYPO3-on-AWS Start Screen"
+ * Extension author: Michael Schams <schams.net>
  *
- * Author: Michael Schams <schams.net>
- * https://t3rrific.com/typo3-on-aws/
+ * Project: https://t3rrific.com/typo3-on-aws/
+ * Sources: https://github.com/typo3-on-aws/aws_dashboard_widgets
+ *
+ * For copyright and license information, please read the LICENSE.txt
+ * file distributed with this source code.
  */
 
 defined('TYPO3') or die();
