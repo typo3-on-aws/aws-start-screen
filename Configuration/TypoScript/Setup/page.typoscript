@@ -1,4 +1,2 @@
 page = PAGE
-page {
-	typeNum = 0
-}
+page.typeNum = 0
