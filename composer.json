@@ -1,6 +1,6 @@
 {
     "name": "typo3-on-aws/aws-start-screen",
-    "description": "TYPO3 site package that provides a simple start screen with basic information about the TYPO3-on-AWS instance.",
+    "description": "TYPO3-on-AWS Getting Started Screen",
     "type": "typo3-cms-extension",
     "require": {
         "typo3/cms-core": "~14.0@dev"
