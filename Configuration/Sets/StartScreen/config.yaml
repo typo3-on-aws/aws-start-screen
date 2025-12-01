@@ -1,0 +1,6 @@
+name: typo3-on-aws/aws-start-screen
+label: TYPO3-on-AWS Getting Started Screen
+
+# Load TypoScript, TSconfig and settings from dependencies
+dependencies:
+  - typo3/fluid-styled-content
