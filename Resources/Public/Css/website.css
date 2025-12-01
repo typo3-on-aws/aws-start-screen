@@ -3,7 +3,7 @@
  * Extension author: Michael Schams <schams.net>
  *
  * Project: https://t3rrific.com/typo3-on-aws/
- * Sources: https://github.com/typo3-on-aws/aws_dashboard_widgets
+ * Code repository: https://github.com/typo3-on-aws/aws-start-screen
  *
  * For copyright and license information, please read the LICENSE.txt
  * file distributed with this source code.
@@ -64,7 +64,6 @@ p, .alert {
 }
 
 .section.landing-page .card-body {
-    min-height: 12rem;
 }
 
 .section.landing-page .card-body .card-text {
@@ -90,6 +89,10 @@ p, .alert {
 
 .section.documentation img.logo {
     margin: 0 auto;
+}
+
+.btn {
+    border-radius: 1.2rem;
 }
 
 .btn-typo3 {
