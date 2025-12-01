@@ -9,7 +9,4 @@ config {
     pageTitleFirst = 1
     pageTitleSeparator = -
     pageTitleSeparator.noTrimWrap = | | |
-
-    // Disable image upscaling
-    noScaleUp = 1
 }
