@@ -1,7 +1,7 @@
 page {
     includeCSS {
-        bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
-        bootstrap.integrity = sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT
+        bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
+        bootstrap.integrity = sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB
         bootstrap.external = 1
         bootstrap.crossorigin = anonymous
         googleFont = https://fonts.googleapis.com/css2?family=Doppio+One&family=Source+Sans+Pro&display=swap
@@ -9,8 +9,9 @@ page {
         website = EXT:aws_start_screen/Resources/Public/Css/website.css
     }
     includeJSFooter {
-        bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js
-        bootstrap.integrity = sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8
+        bootstrap = https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+        bootstrap.integrity = sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI
+        bootstrap.crossorigin = anonymous
         bootstrap.external = 1
     }
 }
