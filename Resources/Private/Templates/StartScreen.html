@@ -14,8 +14,7 @@
                     <f:image src="EXT:aws_start_screen/Resources/Public/Images/thumb-up.svg" alt="Thumb up" width="42" height="42" class="ms-2" />
                 </h2>
                 <p>
-                    You've just launched an <strong>EC2 instance</strong> running <strong>Debian GNU/Linux</strong> with <strong>TYPO3</strong> pre-installed on Amazon Web Services (AWS). Please note that charges may apply while the instance is running.
-                    <a class="btn btn-typo3 btn-sm" href="https://aws.amazon.com/ec2/pricing/" target="_blank" role="button">read more</a>
+                    You've just launched an <strong>EC2 instance</strong> running <strong>Debian GNU/Linux</strong> with <strong>TYPO3</strong> pre-installed on Amazon Web Services (AWS). Please note that charges may apply while the instance is running (see <a href="https://aws.amazon.com/ec2/pricing/" target="_blank" title="Amazon EC2 Pricing Details">Amazon EC2 Pricing</a> for details).
                 </p>
                 <p>
                     Next, you'll need to create an <a class="js-scroll-trigger" href="#access-details">administrator account</a>, which is required to log in to the <a class="js-scroll-trigger" href="#backend-login">TYPO3 backend</a>.
@@ -67,10 +66,10 @@
             <div class="container">
                 <h2>Access Details</h2>
                 <p>
-                    When you launch your EC2 instance for the first time, access credentials such as a random system password are generated automatically. To log in to the <a class="js-scroll-trigger" href="#backend-login">TYPO3 backend</a>, you will also need to create a backend user with administrator privileges.
+                    When you launch your EC2 instance for the first time, application secrets such as database access credentials, the TYPO3 encryption key, and the TYPO3 Install Tool password are generated automatically. To log in to the <a class="js-scroll-trigger" href="#backend-login">TYPO3 backend</a>, you will also need to create a backend user with administrator privileges.
                 </p>
                 <p>
-                    Start by establishing a secure SSH connection to the server using the private SSH key you configured during the EC2 launch (username: <code>admin</code>). For example, the following command uses the file <code>private.key</code> as your private key:
+                    Start by opening a secure SSH connection to the server using the private SSH key you configured during the EC2 launch (username: <code>admin</code>). For example, the following command uses the file <code>private.key</code> as your private key:
                 </p>
                 <pre class="rounded">ssh -i private.key admin@{hostname}</pre>
                 <p class="mb-0">After logging in as the "admin" user, switch to the "typo3" user:</p>
@@ -80,7 +79,7 @@
                 <p class="mb-0">Create the TYPO3 backend user "admin":</p>
                 <pre class="rounded">./vendor/bin/typo3 backend:user:create --admin --maintainer --username admin</pre>
                 <p>
-                    You will be prompted to set a secure password. Use the chosen username (e.g. <code>admin</code>) and the password to log in to the <a class="js-scroll-trigger" href="#backend-login">TYPO3 backend</a>.
+                    You will be prompted to set a secure password and provide an email address. Use the chosen username (e.g. <code>admin</code>) and the password to log in to the <a class="js-scroll-trigger" href="#backend-login">TYPO3 backend</a>.
                 </p>
                 <p>
                     If you encounter any issues, refer to the <a class="js-scroll-trigger" href="#documentation">documentation</a>.
